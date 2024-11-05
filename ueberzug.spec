@@ -23,19 +23,12 @@ display images in combination with X11.
 #--------------------------------------------------------------
 %prep
 %autosetup -p1
-# get ridd of env-script-interpreter
-sed -i -e 's/^#!\/usr\/bin\/env python3/#!\/usr\/bin\/python3/g' %{pypi_name}/*.py
-sed -i -e 's/^#!\/usr\/bin\/env bash/#!\/usr\/bin\/bash/g' %{pypi_name}/lib/*.sh
 
 %build
 %py_build
 
 %install
 %py_install
-
-chmod +x %{buildroot}%{py_platsitedir}/ueberzug/__main__.py
-chmod +x %{buildroot}%{py_platsitedir}/ueberzug/lib/lib.sh
-
 
 %files
 %doc *.md
