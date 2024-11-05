@@ -15,6 +15,7 @@ BuildRequires:  pkgconfig(x11)
 BuildRequires:  python3dist(pillow)
 BuildRequires:  python3dist(docopt)
 BuildRequires:  python3dist(attrs)
+BuildRequires:  python3dist(meson-python)
 
 %description
 ueberzug is a command line util which allows to
