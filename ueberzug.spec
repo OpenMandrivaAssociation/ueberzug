@@ -1,5 +1,5 @@
 Name:           ueberzug
-Version:        18.3.0
+Version:        18.3.1
 Release:        1
 Url:            https://github.com/ueber-devel/ueberzug/
 Summary:        Ueberzug is a command line util to display images
