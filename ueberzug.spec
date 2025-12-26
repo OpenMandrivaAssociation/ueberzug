@@ -1,6 +1,6 @@
 Name:           ueberzug
 Version:        18.3.1
-Release:        1
+Release:        2
 Url:            https://github.com/ueber-devel/ueberzug/
 Summary:        Ueberzug is a command line util to display images
 License:        GPLv3
@@ -8,14 +8,14 @@ Group:          Development/Python
 Source0:        https://github.com/ueber-devel/ueberzug/archive/refs/tags/%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires:  pkgconfig(python)
-BuildRequires:  python3egg(setuptools)
+BuildRequires:  python%{pyver}dist(setuptools)
 BuildRequires:  pkgconfig(xext)
 BuildRequires:  pkgconfig(xres)
 BuildRequires:  pkgconfig(x11)
-BuildRequires:  python3dist(pillow)
-BuildRequires:  python3dist(docopt)
-BuildRequires:  python3dist(attrs)
-BuildRequires:  python3dist(meson-python)
+BuildRequires:  python%{pyver}dist(pillow)
+BuildRequires:  python%{pyver}dist(docopt)
+BuildRequires:  python%{pyver}dist(attrs)
+BuildRequires:  python%{pyver}dist(meson-python)
 
 %description
 ueberzug is a command line util which allows to
